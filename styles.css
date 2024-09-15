@@ -1,0 +1,124 @@
+*{
+  list-style: none ;
+  margin:0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  
+}
+h1{
+  margin-top: 20px ;
+  text-align: center;
+  font-size: 1.5rem;
+}
+p{
+  text-align :center ;
+  margin-top: 10px ;
+}
+a {
+    color: black;
+}
+
+body {
+    background-color: white;
+    font-family: sans-serif;
+}
+
+.screen-menu {
+    background-color:  whitesmoke;
+    height: 100vh;
+    width: 100%;
+    max-width: 450px;
+    position: fixed;
+    top: 0;
+    right: -450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left ;
+    font-size: 1.6em;
+    transition: .3s ease;
+    padding:20px ;
+    padding-top: 80px ;
+}
+.link li{
+  margin-bottom: 30px ;
+}
+.screen-menu.active {
+    right: -200px;
+}
+
+nav {
+  padding: 1rem;
+  display: flex;
+  background-color:whitesmoke ;
+}
+
+.ham-menu {
+    height: 36px;
+    width: 45px;
+    margin-left: auto;
+    position: relative;
+    border-radius: 5px ;
+    border: 2px solid black;
+}
+
+.ham-menu span {
+    height: 2px;
+    width: 50%;
+    background-color:black;
+    border-radius: 25px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: .3s ease;
+  
+}
+.ham-menu span:nth-child(1) {
+    top: 25%;
+}
+.ham-menu span:nth-child(3) {
+    top: 75%;
+}
+
+.ham-menu.active span:nth-child(1) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+.ham-menu.active span:nth-child(2) {
+    opacity: 0;
+}
+.ham-menu.active span:nth-child(3) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+.item{
+  display: flex;
+  justify-content: center ;
+  width: 400px ;
+  margin-top: 10px ;
+}
+.btn{
+  display:flex ;
+  justify-content: center;
+  margin-bottom: 20px ;
+}
+button{
+  border-radius: 5px ;
+  border: 0px;
+  background-color: lightseagreen;
+  margin-top: 40px ;
+  height: 50px;
+  width: 150px ;
+  font-size: 2rem 
+}
+.text{
+  text-align: center;
+  margin-top: 10px ;
+}
+p{
+  text-align: center;
+}
+.list{
+  margin-left: 10px;
+}
